@@ -1,4 +1,4 @@
-import teclado from "npm:readline-sync";
+import teclado from "readline-sync";
 
 let a: number = 0,
   b: number = 0,
