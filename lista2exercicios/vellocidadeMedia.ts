@@ -9,4 +9,4 @@ tempoPercurco = teclado.questionFloat("Digite o tempo que você percorreu essa d
 
 velocidadeMedia = distancia/tempoPercurco;
 
-console.log(`${velocidadeMedia}`);
+console.log(`Sua velocidade média é de ${velocidadeMedia}km/h`);
