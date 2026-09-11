@@ -12,10 +12,10 @@ let     qtdProduzido: number = 0,
 console.log("Qual foi a quantidade de ovos produzido no dia de hoje?");
 qtdProduzido = teclado.questionInt();
 
-qtdEmbalado = Math.floor(qtdProduzido / EMBDUZIA);
+qtdEmbalado = Math.trunc(qtdProduzido / EMBDUZIA);
 qtdResto = qtdProduzido % EMBDUZIA;
-qtdEmbMediaDuzia = qtdResto / EMBMEIADUZIA;
-qtdDiaSeguinte = qtdEmbMediaDuzia % EMBMEIADUZIA;
+qtdEmbMediaDuzia = Math.trunc(qtdResto / EMBMEIADUZIA);
+qtdDiaSeguinte = qtdResto % EMBMEIADUZIA;
 
 console.log(`No dia de hoje foram produzidos ${qtdEmbalado} caixas 12 unidades`);
 console.log(`${qtdEmbMediaDuzia} caixas com 6 unidades.`);
